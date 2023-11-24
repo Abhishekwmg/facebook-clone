@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;600;700;800&family=Montserrat:wght@100&family=PT+Sans&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+    background-color: #f2f4f5;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.fb-header{
+    display: flex;
+    height: 50px;
+    background-color: #fff;
+    align-items: center;
+    box-shadow: -1px 4px 8px -6px rgba(0,0,0,0.75);;
+    justify-content: space-between;
+}
+
+.fb-header .fb-menu-left{
+    width: 300px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.fb-header .fb-menu-left img{
+    width: 30px;
+}
+
+.fb-header .fb-menu-left .fb-search form input{
+    width: 200px;
+    background-color: #f1f2f6;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 400;
+}
+
+.fb-header .fb-menu-left .fb-search form img{
+    position: absolute;
+    top: 16px;
+    left: 70px;
+    width: 18px;
+}
+
+
+.fb-menu-center ul{
+    display: flex;
+}
+
+.fb-menu-center ul li img{
+    width: 30px;
+}
+
+.fb-menu-right ul,
+.fb-menu-center ul,
+.fb-menu-left ul{
+    display: flex;
+}
+.fb-menu-center ul li img{
+    width: 25px;
+    margin-left: 25px;
+}
+
+.fb-menu-center{
+    width: 500px;
+}
+
+.fb-menu-center ul{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-menu-center ul li{
+    width: 80px;
+}
+
+.fb-menu-center ul li:hover::after{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #1775f3;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.fb-menu-right ul li a img{
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fb-menu-right ul li.flex-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.fb-menu-right ul li.flex-profile .profile-two{
+    width: 35px;
+    height: 35px;
+    margin-left: 0;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.fb-menu-right ul li.flex-profile p{
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5a5f;
+}
+
+
+.fb-menu-right ul {
+    align-items: center;
+}
+
+.fb-menu-right ul li{
+    padding: 0 5px;
+}
+
+.fb-menu-right ul li img{
+    width: 16px;
+    background-color: #e4e6e8;
+}
+
+/* Main Menu */
+
+.main-menu-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.main-menu-left{
+    max-width: 350px;
+}
+
+.main-menu-profile-info{
+    margin-top: 20px;
+}
+
+.main-menu-profile-info ul li{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 15px 0px 0px 15px;
+    width: 100%;
+}
+
+.main-menu-profile-info ul li a img{
+    width: 32px;
+    padding: 0 0 0 0;
+}
+
+.main-menu-profile-info ul li p{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.main-menu-profile-info ul li a .first-profile-image{
+    border-radius: 50%;
+}
+
+.main-menu-profile-info ul li form{
+    width: inherit;
+}
+
+.main-menu-profile-info ul li form button{
+    background-color: #e5e7eb;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    width: 80%;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.main-menu-left .main-menu-profile-info .underline{
+    width: 80%;
+    border-bottom: 2px solid #e5e7eb;
+    padding-top: 15px;
+    margin: 10px 0px 10px 15px;
+}
+
+
+/* Shortcuts */
+.main-menu-left .main-menu-shortcuts{
+    width: 400px;
+}
+
+.main-menu-left .main-menu-shortcuts ul li {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 15px 0px 0px 15px;
+    width: 100%;
+}
+
+.main-menu-left .main-menu-shortcuts ul li.shortcut-para p{
+    margin-left: 0px;
+}
+
+.main-menu-left .main-menu-shortcuts ul li.shortcut-para a img{
+    margin-left: 200px;
+    width: 12px;
+}
+
+.main-menu-left .main-menu-shortcuts ul li a img{
+    width: 32px;
+    padding: 0 0 0 0;
+    border-radius: 5px;
+}
+
+.main-menu-left .main-menu-shortcuts ul li p{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.main-menu-left .main-menu-shortcuts ul li form{
+    width: inherit;
+}
+
+.main-menu-left .main-menu-shortcuts ul li form button{
+    background-color: #e5e7eb;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    width: 80%;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Main Menu Center */
+.main-menu-content .main-menu-center {
+    max-width: 700px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.main-menu-content .main-menu-center .fb-story{
+    display: flex;
+    max-height: 200px;
+    max-width: 50px;
+}
+
+.main-menu-content .main-menu-center .fb-story .story{
+    display: relative;
+    padding: 0 5px;
+
+}
+
+.main-menu-content .main-menu-center .fb-story .story img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.main-menu-content .main-menu-center .fb-story .story p {
+    position: absolute;
+    top: 260px;
+    padding-left: 8px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.main-menu-content .main-menu-center .fb-story .story i {
+    padding: 10px;
+    background: #fff;
+    border-radius: 25px;
+    position: absolute;
+    top: 165px;
+    right: 356px;
+}
+
+.main-menu-center .status-update .status-feed {
+    display: flex;
+    height: 120px;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 94%;
+}
+
+.main-menu-center .status-update .status-feed .underline{
+    width: 80%;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.main-menu-center .status-update .status-feed img,
+.main-menu-center .status-update .status-feed form{
+    margin-top: 15px;
+}
+
+
+.main-menu-center .status-update .status-feed img {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+.main-menu-center .status-update .status-feed form {
+    width: 100%;
+}
+
+
+.main-menu-center .status-update .status-feed form input {
+    width: 86%;
+    background-color: #f1f2f6;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 600;
+}
+
+.main-menu-center .status-update .status-attachment {
+    display: flex;
+}
