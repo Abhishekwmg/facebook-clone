@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 body{
     font-family: 'Hanken Grotesk', sans-serif;
     box-sizing: border-box;
@@ -15,11 +16,18 @@ a{
     text-decoration: none;
 }
 
+* p{
+    cursor: pointer;
+}
+
 ul{
     list-style: none;
 }
 
 .fb-header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
     display: flex;
     height: 50px;
     background-color: #fff;
@@ -148,6 +156,12 @@ ul{
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.main-menu-left,
+.main-menu-center,
+.main-menu-right {
+    margin-top: 35px;
+}
+
 .main-menu-left{
     max-width: 350px;
 }
@@ -219,6 +233,8 @@ ul{
 
 .main-menu-left .main-menu-shortcuts ul li.shortcut-para p{
     margin-left: 0px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .main-menu-left .main-menu-shortcuts ul li.shortcut-para a img{
@@ -259,7 +275,7 @@ ul{
 .main-menu-content .main-menu-center {
     max-width: 700px;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 75px;
 }
 
 .main-menu-content .main-menu-center .fb-story{
@@ -269,9 +285,8 @@ ul{
 }
 
 .main-menu-content .main-menu-center .fb-story .story{
-    display: relative;
+    position: relative;
     padding: 0 5px;
-
 }
 
 .main-menu-content .main-menu-center .fb-story .story img {
@@ -281,10 +296,22 @@ ul{
 
 .main-menu-content .main-menu-center .fb-story .story p {
     position: absolute;
-    top: 260px;
-    padding-left: 8px;
+    top: 170px;
+    padding-left: 10px;
     color: #fff;
     font-size: 13px;
+    cursor: pointer;
+}
+
+.main-menu-content .main-menu-center .fb-story .story .story-inner{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    cursor: pointer;
 }
 
 .main-menu-content .main-menu-center .fb-story .story i {
@@ -292,29 +319,27 @@ ul{
     background: #fff;
     border-radius: 25px;
     position: absolute;
-    top: 165px;
-    right: 356px;
+    top: 80px;
+    right: -10px;
+    height: 15px;
+    width: 15px;
+    color: #0000009a;
 }
 
-.main-menu-center .status-update .status-feed {
+.main-menu-center .status-update{
     display: flex;
-    height: 120px;
+    height: 110px;
+    background-color: #fff;
     margin-top: 20px;
-    background: #fff;
     border-radius: 10px;
-    width: 94%;
+    width: 95%;
+    flex-direction: column;
 }
 
-.main-menu-center .status-update .status-feed .underline{
-    width: 80%;
-    border-bottom: 2px solid #e5e7eb;
+ .main-menu-center .status-update .status-feed {
+    display: flex;
+    flex-direction: row;
 }
-
-.main-menu-center .status-update .status-feed img,
-.main-menu-center .status-update .status-feed form{
-    margin-top: 15px;
-}
-
 
 .main-menu-center .status-update .status-feed img {
     width: 35px;
@@ -326,7 +351,6 @@ ul{
 .main-menu-center .status-update .status-feed form {
     width: 100%;
 }
-
 
 .main-menu-center .status-update .status-feed form input {
     width: 86%;
@@ -341,6 +365,143 @@ ul{
     font-weight: 600;
 }
 
-.main-menu-center .status-update .status-attachment {
+.main-menu-center .status-update .status-feed img,
+.main-menu-center .status-update .status-feed form{
+    margin-top: 15px;
+}
+
+.main-menu-center .status-update .status-attachment .underline{
+    width: 94%;
+    border-bottom: 2px solid #f1f2f6;
+    margin: 10px 0px 10px 15px;
+}
+
+.main-menu-center .status-update .status-attachment ul{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.main-menu-center .status-update .status-attachment ul li {
+ display:flex;
+ padding: 5px 45px 0px 10px;
+}
+
+.main-menu-center .status-update .status-attachment ul li a{
+    padding-right: 5px;
+}
+
+.main-menu-center .status-update .status-attachment ul li a img{
+    width: 20px;
+}
+
+.main-menu-center .status-update .status-attachment ul li p{
+    font-size: 15px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area {
+    width: 95%;
+}
+
+.main-menu-content .main-menu-center .main-feed-area{
+    margin-top: 15px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile{
+    position: relative;
+    display: flex;
+    max-height: 50px;
+    padding: 15px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile img{
+    height: 33px;
+    width: 33px;
+    border-radius: 25px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile .feed-times{
+    padding-left: 10px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile .feed-times .feed-timestamp{
+    display: flex;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile .feed-times .feed-timestamp p{
+    font-size: 12px;
+    color: #3333339e;
+    font-weight: 600;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile .feed-times .feed-timestamp img{
+    height: 10px;
+    width: 10px;
+    border-radius: 0;
+    padding-left: 8px;
+    margin-top: 3px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-profile .feed-times .feed-timestamp #timestamp-dots{
+    position: absolute;
+    right: 30px;
+    height: 15px;
+    width: 15px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-title p {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-content img{
+    width: 100%;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-comments {
+    display: flex;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-comments .like-icons{
+    display: flex;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-comments .like-icons img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-comments .feed-details{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-comments .feed-details p{
+    color: #3333339e;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons{
+    display: flex;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons div {
+    max-width: 50px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons div img {
+    height: 30px;
+    width: 30px;
 }
