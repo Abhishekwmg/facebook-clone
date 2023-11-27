@@ -217,6 +217,14 @@ ul{
     margin: 10px 0px 10px 15px;
 }
 
+.underline-feed-status{
+    width: 98%;
+    border-bottom: 2px solid #e5e7eb;
+    padding-top: 5px;
+    margin: 0px 0px 0px 5px;
+    
+}
+
 
 /* Shortcuts */
 .main-menu-left .main-menu-shortcuts{
@@ -495,6 +503,12 @@ ul{
 
 .main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons{
     display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons > div{
+    display: flex;
 }
 
 .main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons div {
@@ -502,6 +516,25 @@ ul{
 }
 
 .main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons div img {
+    height: 20px;
+    width: 20px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .like-buttons div p {
+    padding-left: 5px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button {
+    display: flex;
+    padding: 15px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button img{
     height: 30px;
     width: 30px;
+    border-radius: 25px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button form {
+    position: relative;
 }
