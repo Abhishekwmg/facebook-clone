@@ -527,6 +527,24 @@ ul{
 .main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button {
     display: flex;
     padding: 15px;
+    justify-content: space-between;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button div {
+    width: 100%;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button div input {
+    width: 86%;
+    background-color: #f1f2f6;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 600;
 }
 
 .main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button img{
@@ -537,4 +555,60 @@ ul{
 
 .main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button form {
     position: relative;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button form img {
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button .status-feed {
+    display: flex;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button .status-feed form{
+    width: 100%;
+    position: relative;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button .status-feed form input {
+    width: 86%;
+    background-color: #f1f2f6;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 600;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button .status-feed form .one {
+    position: absolute;
+    right: 80px;
+    top: 8px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button .status-feed form .two {
+    position: absolute;
+    right: 50px;
+    top: 8px;
+}
+
+.main-menu-content .main-menu-center .main-feed-area .feed-heading .feed-reaction .comment-button .status-feed form .three {
+    position: absolute;
+    right: 30px;
+    top: 8px;
+}
+
+.main-menu-content .main-menu-right{
+    margin-right: 10px;
+}
+
+.main-menu-content .main-menu-right h1{
+    margin-top: 40px;
+    font-size: 16px;
+    color: #333;
 }
