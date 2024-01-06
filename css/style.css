@@ -612,3 +612,60 @@ ul{
     font-size: 16px;
     color: #333;
 }
+
+.main-menu-content .main-menu-right .first-sponsor{
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-menu-content .main-menu-right .first-sponsor .sponsor-logo .birthday-logo{
+    width: 40px;
+}
+
+.main-menu-content .main-menu-right .first-sponsor .sponsor-para{
+    max-width: 270px;
+    margin-left: 20px;
+}
+
+.main-menu-content .main-menu-right .first-sponsor .sponsor-para h1{
+    margin: 0;
+}
+
+.main-menu-content .main-menu-right .first-sponsor .sponsor-para .sponsored-image{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.underline{
+    width: 95%;
+    border-bottom: 2px solid #e5e7eb;
+    padding-top: 15px;
+    margin: 10px 0px 10px 15px;
+}
+
+.main-menu-content .main-menu-right .contact-list h1 {
+    margin-top: 20px;
+}
+
+.main-menu-content .main-menu-right .contact-list .contact-detail{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.main-menu-content .main-menu-right .contact-list .contact-detail img{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+.contact-highlight{
+    border: 2px solid #12ff66;
+    padding: 2px;
+}
+
+.main-menu-content .main-menu-right .contact-list .contact-detail p {
+    margin-left: 10px;
+    font-weight: bold;
+}
